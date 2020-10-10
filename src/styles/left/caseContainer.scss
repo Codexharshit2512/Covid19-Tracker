@@ -1,0 +1,63 @@
+.case-card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+
+  .card-container {
+    padding: 1rem 1rem 2.1rem 1.3rem;
+    background-color: white;
+    width: 27%;
+    cursor: default;
+    box-shadow: 1px 1px 3px #939393;
+    border-radius: 10px;
+    position: relative;
+
+    .case-heading {
+      color: lightgray;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .case-count {
+      font-size: 30px;
+      font-weight: 500;
+      color: red;
+      margin: 6px 0 9px 0;
+    }
+
+    .case-total {
+      color: #939393;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card-container {
+      margin-top: 1rem;
+      width: 80%;
+      text-align: center;
+
+      .case-heading {
+        color: lightgray;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .case-count {
+        font-size: 35px;
+        font-weight: 500;
+        color: red;
+        margin: 6px 0 9px 0;
+      }
+
+      .case-total {
+        color: #939393;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.dropdown-container {
+  display: flex;
+  justify-content: space-between;
+  .MuiInputBase-input {
+    padding: 10px 1rem;
+    width: 100px;
+    text-align: left !important;
+  }
+
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    .main-heading {
+      text-align: center;
+    }
+    .select {
+      margin-top: 2rem;
+      padding: 0 2rem;
+    }
+    .MuiFormControl-root {
+      width: 100%;
+    }
+    .MuiInputBase-input {
+      width: 100%;
+    }
+  }
+}

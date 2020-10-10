@@ -1,0 +1,25 @@
+.App {
+  display: flex;
+  flex-direction: row;
+
+  .left-container {
+    flex: 5;
+  }
+
+  .right-container {
+    flex: 3.5;
+    margin-left: 2rem;
+    box-shadow: 1px 1px 3px #939393;
+    padding: 1rem;
+    background-color: white;
+  }
+
+  @media (max-width: 1255px) {
+    display: flex;
+    flex-direction: column;
+
+    .right-container {
+      margin: 1rem 0 1rem 0;
+    }
+  }
+}
